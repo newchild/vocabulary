@@ -2,14 +2,14 @@
 #include <string>
 #include <stdlib.h>
 using namespace std;
-string vokabel[100] = {"felix", "contentus", "gratus", "sollicitus", "offensus","iratus","saevus","a-vertere","vereri","re-fugere","metuere","timere","trememre","horrere","queri","lacrimare","dolor","lugere","luctus","plangor","mori","mors","letum","letalis","necare","caedere","caedes"};
-string meaning[100] ={"glucklich","zufrieden","angenehm","unruhig","beleidigt","wutend","wutend","sich.abwenden","sich.scheuen","zuruckweichen","furchten","furchten","zittern","erstarren","beklagen","weinen","Schmerz","trauern","Trauer","Trauer","sterben","Tod","Tod","totdlich","toten","Mord","niederhauen","Ermordung"};
+string vokabel[100] = {};//add foreign vocabularies in here
+string meaning[100] ={};//add translations here
 string lernvok[100] ={};
 string lernbed[100] ={};
 int vokabel_count = 0;
 int vokabel_count_false = 0;
 string vokabel_own;
-int vokabel_limit = 27;
+int vokabel_limit = 0;//number of total Vocabularies here
 int multiplier;
 char buffer[100];
 int main()
@@ -43,7 +43,7 @@ int main()
         }
 
     }
-    cout << "Diese Vokabeln musst du noch lernen" << endl;
+    cout << "You have to learn these vocabularies" << endl;
     for(int i = 0; i<vokabel_count_false;i++){
             cout << lernvok[i] << " : " << lernbed[i] << "\n";
     }
